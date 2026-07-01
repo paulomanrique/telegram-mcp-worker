@@ -1,0 +1,12 @@
+# Local secrets for `wrangler dev` -- never commit.
+.dev.vars
+.env
+
+# Private production config (holds the real custom domain/host).
+wrangler.prod.toml
+
+# Wrangler / build artifacts.
+.wrangler/
+node_modules/
+dist/
+*.log

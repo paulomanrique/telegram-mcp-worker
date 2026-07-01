@@ -1,0 +1,17 @@
+name = "telegram-mcp-worker"
+main = "src/index.js"
+compatibility_date = "2026-06-30"
+
+# Serve the Worker on a custom domain in YOUR OWN zone. Uncomment and set the
+# pattern to your host. Prefer keeping your real host out of version control:
+# put it in a private `wrangler.prod.toml` (gitignored) and deploy with
+#   wrangler deploy --config wrangler.prod.toml
+#
+# [[routes]]
+# pattern = "mcp.example.com"
+# custom_domain = true
+
+# Secrets (NOT stored here) — set once after the first deploy:
+#   wrangler secret put SECRET_PATH
+#   wrangler secret put TELEGRAM_BOT_TOKEN
+#   wrangler secret put TELEGRAM_DEFAULT_CHAT_ID
